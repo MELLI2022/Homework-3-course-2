@@ -1,12 +1,14 @@
-public class Truck extends Vehicle {
+public class Truck extends Car {
 
     public Truck(String modelName,
                  int wheelsCount)
     {
         super(modelName, wheelsCount);
     }
+
+
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+       System.out.println("Меняем покрышку");
     }
 
     public void checkEngine() {
@@ -16,11 +18,10 @@ public class Truck extends Vehicle {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
     }
-
     public void getRepair(){
-        System.out.println(" У транспортного средства имеется  двигатель" );
 
-    };
+     checkEngine();
+     checkTrailer();
 
-
+     };
 }

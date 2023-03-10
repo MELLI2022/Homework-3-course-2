@@ -7,8 +7,6 @@ public abstract class Vehicle  {//транспортное средство
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
-    public abstract void getRepair();
-
     public String getModelName() {
         return modelName;
     }
@@ -24,7 +22,7 @@ public abstract class Vehicle  {//транспортное средство
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-
-
+    public abstract void updateTyre();
+    public abstract void getRepair();
 }
 

@@ -1,8 +1,9 @@
-public class Car extends Vehicle{
-    public Car(String modelName,
-               int wheelsCount) {
+public class Car extends Vehicle {
+
+    public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
@@ -12,7 +13,7 @@ public class Car extends Vehicle{
     }
 
     public void getRepair(){
-        System.out.println("Имеет двигатель");
 
+        checkEngine();
     };
 }
